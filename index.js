@@ -67,7 +67,7 @@ app.post("/posts", (req, res) => {
     console.log(req.body);
     let { username, content } = req.body;
     let id = uuidv4();
-    posts.push({ id, username, content }); // Adding new post
+    posts.push({ id, username, short_content, title, content }); // Adding new post
     console.log("post created");
     res.redirect("/posts");
 });
