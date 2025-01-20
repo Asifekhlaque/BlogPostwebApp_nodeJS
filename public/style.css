@@ -1,0 +1,136 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(3, 64, 162);
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.card h1 {
+    color: rgb(0, 0, 0);
+}
+
+.card button {
+    background-color: rgb(3, 64, 162);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.card1 h1 {
+    color: rgb(0, 0, 0);
+}
+
+.edit {
+    background-color: rgb(255, 196, 0);
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.delete {
+    background-color: rgb(255, 0, 0);
+    color: #fdfdfd;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit {
+    margin-top: 10px;
+    background-color: rgb(19, 162, 3);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.AddNew {
+    margin-top: 10px;
+    background-color: rgb(122, 3, 162);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.AddNew a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.form h1{
+    color: rgb(0, 0, 0);
+}

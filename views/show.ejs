@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <button class="back"><a href="http://localhost:3000/posts">Back</a></button>
+    <h2>Welcome to Post Details</h2>
+    <div class="main-cont">
+        <div class="card1">
+            <p><b>Post Id :</b><br>
+                <%= post.id %>
+            </p>
+            <h1>
+                <%= post.title %>
+            </h1>
+            <p><b>Short Content </b>
+                <%= post.short_content %>
+            </p>
+            <p><b>Content </b>
+                <%= post.content %>
+            </p>
+            <p><b>Written by </b>
+                <%= post.username %>
+            </p>
+            <div class="btn-group">
+                <button class="edit"><a href="http://localhost:3000/posts/<%= post.id %>/edit">Edit</a></button>
+                <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                    <button class="delete">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

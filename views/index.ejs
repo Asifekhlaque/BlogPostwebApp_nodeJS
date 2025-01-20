@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Welcome To Blogger</h1>
+    <p>Place to write and read your ideas</p>
+    <div class="main">
+        <% for(post of posts){ %>
+            <div class="card">
+                <h1>
+                    <%= post.title %>
+                </h1>
+                <p>
+                    <%= post.short_content %>
+                </p>
+                <p><b>Written by</b>
+                    <%= post.username %>
+                </p>
+                <button><a href="http://localhost:3000/posts/<%= post.id %>">Show Details</a></button>
+            </div>
+            <% } %>
+    </div>
+    <button class="AddNew"><a href="http://localhost:3000/posts/new">New Post</a></button>
+
+    <p style="text-align: center;">Developed By Asif Ekhalque on 20 Jan 2025</p>
+
+</body>
+
+</html>
